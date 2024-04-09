@@ -1,11 +1,28 @@
-# CVPR/ICCV/3DV Official LaTeX template 
+# CLIP-Embed-KD: Computationally Efficient Knowledge Distillation Using Embeddings as Teachers
 
-History (in reverse chronological order)
+**PAPER:** [arxiv link]()
 
-- References in `cvprblue` for CVPR 2024 by [Klaus Greff](https://github.com/Qwlouse) 
-- added natbib for CVPR 2024 by [Christian Richardt](https://richardt.name/)
-- replaced buggy (review-mode) line numbering for 3DV 2024 by [Adin Ramirez Rivera](https://openreview.net/profile?id=~Ad%C3%ADn_Ram%C3%ADrez_Rivera1)
-- logic for inline supplementary for 3DV 2024 by [Andrea Tagliasacchi](https://taiya.github.io) 
-- modernized for CVPR 2022 by [Stefan Roth](stefan.roth@NOSPAMtu-darmstadt.de)
-- created cvpr.sty file to unify review/rebuttal/final versions by [Ming-Ming Cheng](https://github.com/MCG-NKU/CVPR_Template)
-- developed CVPR 2005 template  by [Paolo Ienne](Paolo.Ienne@di.epfl.ch) and [Andrew Fitzgibbon](awf@acm.org)
+*Can pre-computed embeddings obtained from the teacher model be used to train the student model in knowledge distillation?*
+
+We extend CLIP for efficient knowledge distillation, by utilizing embeddings as teachers. Typical knowledge distillation frameworks require running forward passes through a teacher model, which is often prohibitive in the case of billion or trillion parameter teachers. Using only the embeddings of the teacher models to guide the distillation can yield significant computational savings.
+
+## RUNNING THE SCRIPT
+This supplementary material contains code for reproducing results in the paper. Run the following command with appropriate arguments:
+
+```
+python train.py \
+	--dataset-name <CIFAR10; CIFAR100; ImageNet> \
+	--teacher-model <Huggingface-ckpt-name> \
+	--log-folder <folder-to-save-logs> \
+	--ckpt-save-name <name-of-ckpt-to-save-trained-model> \
+	--train-type <embed-KD; teacher-KD; vanilla>
+```
+
+An example command for running the script is available in `train.sh`. The argument `train-type vanilla` refers to regular knowledge distillation (without using the CLIP distillation loss).
+
+The argument `teacher-model` is the name of the HuggingFace checkpoint. Teacher models used in the paper include: `google/vit-large-patch16-224-in21k`, `google/vit-large-patch32-224-in21k`, `google/vit-base-patch16-224-in21k` and `google/vit-base-patch32-224-in21k`. The configuration of the student model, and other training parameters are in `config.py`.
+
+![alt text](comp_resources.png "CLIP-Embed-KD: Computationally efficient")
+
+## CITATION
+If you find this work useful, please consider citing it.
