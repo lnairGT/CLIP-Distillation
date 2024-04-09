@@ -22,7 +22,9 @@ An example command for running the script is available in `train.sh`. The argume
 
 The argument `teacher-model` is the name of the HuggingFace checkpoint. Teacher models used in the paper include: `google/vit-large-patch16-224-in21k`, `google/vit-large-patch32-224-in21k`, `google/vit-base-patch16-224-in21k` and `google/vit-base-patch32-224-in21k`. The configuration of the student model, and other training parameters are in `config.py`.
 
-![alt text](comp_resources.png "CLIP-Embed-KD: Computationally efficient")
+### CLIP-Embed-KD: computational efficiency
+
+<img src="comp_resources.png" width="500">
 
 ## CITATION
 If you find this work useful, please consider citing it.
