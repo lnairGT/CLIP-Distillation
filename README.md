@@ -27,4 +27,4 @@ The argument `teacher-model` is the name of the HuggingFace checkpoint. Teacher 
 <img src="comp_resources.png" width="500">
 
 ## CITATION
-If you find this work useful, please consider citing it.
+If you find this work useful, please consider citing the paper: (insert bibtex)
