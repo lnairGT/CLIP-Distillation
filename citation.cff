@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you find this work helpful, please consider citing it as below."
+authors:
+  - family-names: Nair
+    given-names: Lakshmi
+title: "CLIP-Embed-KD: Computationally Efficient Knowledge Distillation Using Embeddings as Teachers"
+version: 2.0.4
+year: 2024
+journal: ArXiv
+doi: https://doi.org/XYZ/arXiv.XYZ
+date-released: 2024-04-12
+url: "https://github.com/lnairGT/CLIP-Distillation"
