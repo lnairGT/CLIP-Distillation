@@ -4,10 +4,10 @@
 
 *Can pre-computed embeddings obtained from the teacher model be used to train the student model in knowledge distillation?*
 
-We extend CLIP for efficient knowledge distillation, by utilizing embeddings as teachers. Typical knowledge distillation frameworks require running forward passes through a teacher model, which is often prohibitive in the case of billion or trillion parameter teachers. Using only the embeddings of the teacher models to guide the distillation can yield significant computational savings.
+This project extends CLIP for efficient knowledge distillation, by utilizing embeddings as teachers. Typical knowledge distillation frameworks require running forward passes through a teacher model, which is often prohibitive in the case of billion or trillion parameter teachers. Using only the embeddings of the teacher models to guide the distillation can yield significant computational savings.
 
 ## RUNNING THE SCRIPT
-This supplementary material contains code for reproducing results in the paper. Run the following command with appropriate arguments:
+Run the following command with appropriate arguments:
 
 ```
 python train.py \
