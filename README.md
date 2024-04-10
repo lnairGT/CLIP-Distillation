@@ -1,6 +1,6 @@
 # CLIP-Embed-KD: Computationally Efficient Knowledge Distillation Using Embeddings as Teachers
 
-**PAPER:** [arxiv link]()
+**PAPER:** [arxiv link](https://arxiv.org/abs/2404.06170)
 
 *Can pre-computed embeddings obtained from the teacher model be used to train the student model in knowledge distillation?*
 
