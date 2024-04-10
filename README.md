@@ -27,4 +27,14 @@ The argument `teacher-model` is the name of the HuggingFace checkpoint. Teacher 
 <img src="comp_resources.png" width="500">
 
 ## CITATION
-If you find this work useful, please consider citing the paper: (insert bibtex)
+If you find this work useful, please consider citing the paper:
+```
+@misc{nair2024clipembedkd,
+      title={CLIP-Embed-KD: Computationally Efficient Knowledge Distillation Using Embeddings as Teachers}, 
+      author={Lakshmi Nair},
+      year={2024},
+      eprint={2404.06170},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
