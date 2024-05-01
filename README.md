@@ -26,6 +26,10 @@ The argument `teacher-model` is the name of the HuggingFace checkpoint. Teacher 
 
 <img src="comp_resources.png" width="500">
 
+### Pseudocode reference
+<img width="563" alt="Pseudocode_1" src="https://github.com/lnairGT/CLIP-Distillation/assets/9009492/683c6ae8-4a80-4094-b369-fde9fdcf616e">
+<img width="563" alt="Pseudocode_2" src="https://github.com/lnairGT/CLIP-Distillation/assets/9009492/5604744a-0ba6-48a4-ac70-1c6d395fd627">
+
 ## CITATION
 If you find this work useful, please consider citing the paper:
 ```
