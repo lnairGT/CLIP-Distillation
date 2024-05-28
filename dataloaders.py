@@ -45,12 +45,12 @@ def get_original_cifar10_dataloaders(
     ])
 
     trainset = torchvision.datasets.CIFAR10(root=root, train=True,
-                                            download=False, transform=transform_train)
+                                            download=True, transform=transform_train)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=train_bsz,
                                             shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR10(root=root, train=False,
-                                        download=False, transform=transform_test)
+                                        download=True, transform=transform_test)
     testloader = torch.utils.data.DataLoader(testset, batch_size=val_bsz,
                                             shuffle=False, num_workers=2)
 
@@ -81,12 +81,12 @@ def get_original_cifar100_dataloaders(
     ])
 
     trainset = torchvision.datasets.CIFAR100(root=root, train=True,
-                                            download=False, transform=transform_train)
+                                            download=True, transform=transform_train)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=train_bsz,
                                             shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR100(root=root, train=False,
-                                        download=False, transform=transform_test)
+                                        download=True, transform=transform_test)
     testloader = torch.utils.data.DataLoader(testset, batch_size=val_bsz,
                                             shuffle=False, num_workers=2)
 
