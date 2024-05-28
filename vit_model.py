@@ -122,11 +122,10 @@ class TeacherViT(torch.nn.Module):
         self.model = ViTModel.from_pretrained(model_name)
 
     def forward(self, x):
-        with torch.no_grad():
-            try:
-                outputs = self.model(x)
-            except:
-                outputs = self.model(**x)
+        try:
+            outputs = self.model(x)
+        except:
+            outputs = self.model(**x)
         last_hidden_states = outputs.last_hidden_state
         # Get embeddings from the [CLS] token
         outputs = last_hidden_states[:, 0, :]

@@ -16,8 +16,10 @@ def get_avg_embed_data(
     data = []
     i = 0
     rem_samples = {k: num_samples_per_class for k in range(num_classes)}
+    model.eval()
     for img, label in tqdm(train_dataloader, desc="Getting embeddings"):
-        embed = model(img.to(device))  # Batch_size x embed_dim
+        with torch.no_grad():
+            embed = model(img.to(device))  # Batch_size x embed_dim
         label = label.to(device)
         embeds_per_class = []
         labels_per_class = []
