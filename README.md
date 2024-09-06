@@ -1,6 +1,8 @@
 # CLIP-Embed-KD: Computationally Efficient Knowledge Distillation Using Embeddings as Teachers
 
-**PAPER:** [arxiv link](https://arxiv.org/abs/2404.06170)
+**Short paper accepted to 28th IEEE High Performance Extreme Computing Conference (HPEC) 2024 -- Outstanding short paper award**
+
+**Expanded paper available on arxiv:** [here](https://arxiv.org/abs/2404.06170)
 
 *Can pre-computed embeddings obtained from the teacher model be used to train the student model in knowledge distillation?*
 
